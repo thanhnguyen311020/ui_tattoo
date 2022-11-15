@@ -1,0 +1,627 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2B2B2B;
+    
+}
+
+.top-navigation {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2B2B2B;
+   
+}
+
+header .logo {
+    flex: 1 1 30%
+}
+
+.logo img {
+    width: 25%;
+    padding: 10px 10px
+}
+
+nav {
+    font-family: 'Viaoda Libre', cursive;
+    flex: 1 1 70%;
+    /* text-align: right; */
+    display: flex;
+    justify-content: end;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+
+nav ul li {
+    width: 20%;
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 400;
+    color: #F2F2F2;
+}
+
+.active {
+    color: #D73131;
+}
+
+.bannerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* background-color: red; */
+    min-height: 300px;
+    flex-direction: column;
+}
+
+.text-banner {
+    position: absolute;
+    /* display: block; */
+    font-family: 'Vesper Libre', serif;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(269.08deg, rgba(0, 0, 0, 0.1) 20.63%, rgba(95, 95, 95, 0) 86.65%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-banner h1 {
+    font-weight: 700;
+    letter-spacing: 0.3em;
+
+}
+
+.banner {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+}
+
+.banner .img-banner {
+    display: flex;
+    width: 30%;
+    flex-direction: column;
+}
+
+.banner .img-banner img {
+    width: 100%;
+}
+.people{
+    transform: translateY(-8rem);
+    display: block;
+    border-radius: 52% 48% 45% 55% / 0% 0% 100% 100%  ;
+}
+
+.banner  .text-content {
+    width: 35%;
+    font-family: 'Viaoda Libre';
+    font-style: normal;
+    font-weight: 400;
+    
+}
+
+.banner .text-content h3{
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    text-decoration-line: line-through;
+    color: #2B2B2B;
+    font-weight: 800;
+}
+
+.banner .text-content p{
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #2B2B2B;
+}
+
+.banner .text-content a{
+    width: 100%;
+    display: block;
+    margin-top: 1rem;
+    font-size: 2rem; 
+    text-align: center;
+    background-color: #000000;
+    padding: 0.5rem 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #FFFFFF;   
+    text-decoration: none;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+}
+
+.various-container{
+    width: 100%;
+    background-color: #2B2B2B;
+    color:#CBCBCB;
+    font-family: 'Viaoda Libre' , sans-serif;
+}
+.various{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.various .text{
+    /* width: 40%;f */
+    flex: 1 1 30%
+}
+
+.various .text h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.various .text p{
+    font-size: 1rem;
+    font-family: 'Vidaloka', sans-serif;
+    line-height: 1.5rem;
+    font-weight: 100;    
+    letter-spacing: 0.1rem;
+}
+
+.various .img{
+    flex: 1 1 60%;
+}
+.various .img img{
+    width: 110%;
+}
+
+.various .text a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ECECEC;
+    border-radius: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+    margin-top: 2rem;
+}
+
+.calture-container{
+    width: 100%;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+.calture{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding: 4rem 0
+}
+
+.calture .text{
+    flex: 1 1 10%;
+}
+
+.calture .text h3{
+    font-size: 3rem;
+    color: #2B2B2B;
+    margin-top: 2rem;
+}
+
+.calture .text p{
+    color: #797272;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}
+
+.calture .text img{
+    width: 60%;
+    border-radius: 50%;
+}
+
+.calture .img{
+    flex: 1 1 40%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #FFFFFF;
+    z-index: 2;
+   
+}
+
+.calture .img>img{
+    display: block;
+    width: 50%;
+    margin: auto;
+    opacity: .7;
+}
+
+.calture .img a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.calture .img a img{
+    width: 30%;
+}
+
+footer{
+    width: 100%;
+    background-color: #2B2B2B;
+}
+
+.footer-contact{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    /* padding: 4rem 0; */
+    
+    /* justify-content: center; */
+}
+
+.footer-contact .contact{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 4rem 0;
+    
+}
+
+.footer-contact .social{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 150px;
+    border-left: 3px #434242 solid;
+   
+}
+
+.footer-contact .social a{
+    display: flex;
+    width: 9%;
+    text-align: center;
+    margin-left: 1rem;
+    /* display: block; */
+}
+
+.footer-contact .social a img{
+    width: 100%;
+}
+
+.footer-contact .contact a{
+    color: #DADADA;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.footer-contact .contact i{
+    font-size: 1.5rem;
+    width: 2.5rem;
+    text-align: center;
+}
+
+footer h5{
+    color: #DCDCDC;
+    font-family: 'Viaoda Libre', sans-serif;
+    letter-spacing: .2rem;
+    font-weight: normal;
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+
+
+.bannerDesign{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/designBanner.png");
+
+    /* Set a specific height */
+    height: 100%;
+    min-height: 500px;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bannerDesign h1{
+    font-family: 'Viaoda Libre', sans-serif;
+    font-size: 7rem;
+    letter-spacing: 4rem;
+}
+
+.style-container{
+    width: 100%;
+    background: linear-gradient(180.58deg, #2C0000 33.17%, rgba(44, 0, 0, 0.62) 107.63%);
+}
+
+.style-container .style{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 4rem 0; */
+    margin-bottom: 4rem;
+    margin-top: 8rem;
+}
+.style-container .style .card{
+    flex: 1 1 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   
+}
+
+.style-container .style .card h5{
+    font-family: 'Viaoda Libre', sans-serif;
+    color: #D4D4D4;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .4rem;
+}
+
+.style-container .style .card img{
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    padding-top: 4rem;
+    font-weight: normal;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.about-container{
+    width: 100%;
+}
+
+.about-container .about{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.about-container .about .text{
+    flex: 1 1 30%;
+    font-family: 'Vesper Libre', sans-serif;
+}
+
+.about-container .about .text h1{
+    font-size: 4rem;
+}
+
+.about-container .about .text p{
+    font-family: 'Viaoda Libre', sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 400;
+    color: #868080;
+    letter-spacing: .2rem;
+}
+
+.button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.button a{
+    width: 50%;
+    background-color: #000000;
+    text-decoration: none;
+    padding: 0px 0;
+    margin: 0 !important;
+    border-radius: 2rem;
+    font-size: 2rem;
+    color: #FFFFFF;
+    border: .2rem solid #000000;
+    transition: all .7s ease;
+}
+
+.button a:hover{
+    color:#000000;
+    background-color: #FFFFFF;
+}
+
+.button a:last-child{
+    background-color: #FFFFFF;
+    color: #000000;
+    border: .2rem solid #000000;
+}
+.button a:last-child:hover{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+
+.about-container .about .img{
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: end;
+}
+.about-container .about .img img{
+    display: block;
+    width: 80%;
+    /* margin: auto; */
+}
+
+.contact-container{
+    width: 100%;
+    background-color: #2B2B2B;
+}
+
+.contact-container .contact{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 4rem 0;
+    gap: 1rem;
+
+   
+}
+
+.form-container{
+    width: 60%;
+    border: .5rem solid #ffffff;
+    padding: 3rem 3rem 3rem 0;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.input {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+form input, textarea{
+    width: 75%;
+    padding: 10px 10px;
+    font-size: .9rem;
+    border-radius: .4rem;
+    border: none;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form label{
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn a{
+    vertical-align: middle;
+   text-decoration: none;
+   color: #FFFFFF;
+   background-color: #000000;
+   font-size: 1rem;
+   text-transform: uppercase;
+   font-family: 'Montserrat', sans-serif;
+   padding: 1rem 1.5rem;
+   border-radius: 2rem;
+}
+
+
+.contact-social{
+    /* flex: 1 1 30%;w */
+    width: 40%;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    background: linear-gradient(131.47deg, #2B2B2B 2.32%, #343434 100%);
+box-shadow: 18px 18px 9px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+transform: translateX(-20%);
+}
+
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.line{
+    flex: 1 1 20%;
+    width:3rem;
+    display: block;
+    border-bottom: .2rem solid #C4C4C4;
+    justify-content: center;
+    align-items: center;
+}
+
+.link a{
+    flex: 1 1 40%;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.link a:nth-child(1){
+    /* background: linear-gradient(180deg, #0452E9 0%, rgba(79, 29, 236, 0.97) 33.33%, #D21A5E 68.23%, #DBFF00 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text; */
+/* text-fill-color: transparent; */
+}
+.link a:nth-child(1){
+   color: #3E4DD4;
+/* text-fill-color: transparent; */
+}
+.link img{
+    width: 10%;
+}
+
+
